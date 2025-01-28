@@ -1,0 +1,33 @@
+
+For Bash, add this to the end of ~/.bashrc
+(Adjust user name as needed)
+
+eval "$(oh-my-posh init bash --config /mnt/c/Users/PeterLanoie/roaming-config/.mytheme.omp.json)"
+
+
+
+For Powershell:
+
+echo 'test' > $PROFILE
+
+    C:\Users\PeterLanoie\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+
+add this
+    oh-my-posh init pwsh --config C:\Users\PeterLanoie\roaming-config\.mytheme.omp.json | Invoke-Expression
+
+reload with 
+    . $PROFILE 
+
+
+
+Original session segment
+
+        {
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b0",
+          "template": "{{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }}",
+          "foreground": "p:black",
+          "background": "p:yellow",
+          "type": "session",
+          "style": "diamond"
+        },
