@@ -1,4 +1,3 @@
-
 ROAMING_PROFILES_ALIASES_SCRIPT_DIR=$(dirname "$(realpath "${BASH_SOURCE[0]}")")
 
 echo "Loading roaming-profiles command aliases from $ROAMING_PROFILES_ALIASES_SCRIPT_DIR"
